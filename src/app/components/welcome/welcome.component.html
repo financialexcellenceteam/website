@@ -1,0 +1,19 @@
+<app-header></app-header>
+<div class="welcome-container">
+  <div class="welcome-card">
+    <h1>Welcome!</h1>
+    <div class="user-info">
+      <p class="username">Hello, <strong>{{ username }}</strong>!</p>
+    </div>
+    
+    <div class="message-section">
+      <p *ngIf="loading" class="loading">Loading...</p>
+      <p *ngIf="!loading" class="message">{{ message }}</p>
+    </div>
+
+    <button (click)="logout()" class="logout-button">
+      Logout
+    </button>
+  </div>
+</div>
+

@@ -1,0 +1,27 @@
+<header class="app-header">
+  <div class="header-container">
+    <div class="logo">
+      <img src="assets/logo.png" alt="Financial Excellence" class="logo-image" />
+      <h2>Financial Excellence</h2>
+    </div>
+    <nav class="nav-buttons">
+      <button 
+        *ngIf="!authService.isAuthenticated()"
+        (click)="openLoginModal()"
+        class="nav-button"
+      >
+        Login
+      </button>
+      <button 
+        *ngIf="authService.isAuthenticated()"
+        (click)="logout()"
+        class="nav-button logout-btn"
+      >
+        Logout
+      </button>
+    </nav>
+  </div>
+  
+  <app-login-modal *ngIf="showLoginModal" (closeModal)="closeLoginModal()"></app-login-modal>
+</header>
+

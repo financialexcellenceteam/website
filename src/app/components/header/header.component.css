@@ -1,0 +1,99 @@
+.app-header {
+  background-color: #ffffff;
+  color: #1a365d;
+  padding: 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 24px;
+  width: 100%;
+  box-sizing: border-box;
+  max-width: 1400px;
+  margin: 0 auto;
+  height: 56px;
+  overflow: hidden;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-image {
+  max-height: 65px;
+  height: auto;
+  width: auto;
+  object-fit: contain;
+  display: block;
+}
+
+.logo h2 {
+  margin: 0;
+  font-size: 1.5em;
+  font-weight: 700;
+  color: #1a365d;
+  letter-spacing: -0.5px;
+  background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  position: relative;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.nav-button {
+  padding: 10px 24px;
+  background-color: transparent;
+  color: #4a5568;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 6px;
+  font-size: 0.95em;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.nav-button:hover {
+  background-color: #f7fafc;
+  border-color: #cbd5e0;
+  color: #2d3748;
+}
+
+.nav-button.active {
+  background-color: #2563eb;
+  color: white;
+  border-color: #2563eb;
+}
+
+.nav-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.nav-button.logout-btn {
+  background-color: #e53e3e;
+  color: white;
+  border-color: #e53e3e;
+}
+
+.nav-button.logout-btn:hover {
+  background-color: #c53030;
+  border-color: #c53030;
+}
+
