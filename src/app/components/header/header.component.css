@@ -1,13 +1,11 @@
 .app-header {
-  background-color: #ffffff;
-  color: #1a365d;
+  background: linear-gradient(-90deg, #02203c, #001528);
+  color: #ffffff;
   padding: 0;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   position: sticky;
   top: 0;
   z-index: 1000;
   width: 100%;
-  border-bottom: 1px solid #e2e8f0;
 }
 
 .header-container {
@@ -30,23 +28,18 @@
 }
 
 .logo-image {
-  max-height: 65px;
-  height: auto;
-  width: auto;
-  object-fit: contain;
+  height: 38px;
+  width: 38px;
   display: block;
+  flex-shrink: 0;
 }
 
 .logo h2 {
   margin: 0;
   font-size: 1.5em;
   font-weight: 700;
-  color: #1a365d;
+  color: #ffffff;
   letter-spacing: -0.5px;
-  background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
   position: relative;
 }
 
@@ -58,8 +51,8 @@
 .nav-button {
   padding: 10px 24px;
   background-color: transparent;
-  color: #4a5568;
-  border: 1.5px solid #e2e8f0;
+  color: #ffffff;
+  border: none;
   border-radius: 6px;
   font-size: 0.95em;
   font-weight: 500;
@@ -70,15 +63,13 @@
 }
 
 .nav-button:hover {
-  background-color: #f7fafc;
-  border-color: #cbd5e0;
-  color: #2d3748;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
 }
 
 .nav-button.active {
-  background-color: #2563eb;
-  color: white;
-  border-color: #2563eb;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
 }
 
 .nav-button:focus {
@@ -87,13 +78,13 @@
 }
 
 .nav-button.logout-btn {
-  background-color: #e53e3e;
-  color: white;
-  border-color: #e53e3e;
+  background-color: rgba(229, 62, 62, 0.2);
+  color: #ffffff;
+  border: 1.5px solid rgba(229, 62, 62, 0.5);
 }
 
 .nav-button.logout-btn:hover {
-  background-color: #c53030;
-  border-color: #c53030;
+  background-color: rgba(229, 62, 62, 0.3);
+  border-color: rgba(229, 62, 62, 0.7);
 }
 
